@@ -1,0 +1,105 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#addBtn {
+    background-color: #00c853;
+    color: white;
+}
+
+#addBtn:hover {
+    background-color: #009624;
+}
+
+#removeBtn {
+    background-color: #d50000;
+    color: white;
+}
+
+#removeBtn:hover {
+    background-color: #9b0000;
+}
+
+#dialBtn {
+    background-color: #2962ff;
+    color: white;
+}
+
+#dialBtn:hover {
+    background-color: #0039cb;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #333;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#callLog {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    min-height: 50px;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
